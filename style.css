@@ -1,0 +1,71 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    border: 0px solid black;
+}
+header{
+    text-align: center;
+}
+
+main {
+   margin-top:50px ;
+    display: flex;
+    justify-content: center;
+
+}
+
+#magic-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 227, 243);
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(167, 162, 162);
+
+    animation-name: myanima, slide;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-duration: 2s, 3s;
+    animation-iteration-count: infinite, 3;
+    animation-direction: alternate, normal;
+
+    transition: background-color 3s ease-in-out, transform 3s ease-in-out;
+}
+
+
+#magic-card:hover {
+    transform: rotate(360deg);
+    background-color: antiquewhite;
+}
+
+@keyframes myanima {
+    0% {
+        translate: 0 0;
+
+    }
+
+    50% {
+        translate: 40px 0;
+    }
+
+    100% {
+        translate: -40px 0;
+
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
