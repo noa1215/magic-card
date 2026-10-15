@@ -69,3 +69,12 @@ main {
         opacity: 1;
     }
 }
+
+@media (prefers-reduced-data: reduce)  {
+    #magic-card {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
+}
